@@ -307,7 +307,7 @@ const createWindow = () => {
     mainWindow.setMenu(null)
     mainWindow.title = "Arctos"
     mainWindow.loadURL('http://localhost:5000/')
-    mainWindow.setIcon('./logo.ico')
+    mainWindow.setIcon('./uninstallerIcon.ico')
 
 };
   
