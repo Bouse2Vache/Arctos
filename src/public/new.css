@@ -1,0 +1,23 @@
+.container {
+    margin-top: 3%;
+    padding-bottom: 3%;
+}
+
+body {
+    overflow: visible;
+}
+
+.btn_form {
+    margin-top: 60px;
+}
+
+label {
+    color: #181818;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.form-group {
+    padding-top: 20px;
+}

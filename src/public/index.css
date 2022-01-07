@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Licorice&family=Yellowtail&display=swap');
+body {
+    height: 100vh;
+}
+
+.title {
+    text-align: center;
+    position: relative;
+    padding-top: 16%;
+    font-size: 100px;
+    font-family: 'Licorice', cursive;
+    color: #181818;
+    z-index: -5;
+}
+.by {
+    text-align: center;
+    position: relative;
+    font-size: 35px;
+    font-family: 'Yellowtail', cursive;
+    color: #181818;
+    z-index: -5;
+}
+.bouttons {
+    margin-top: 4%;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 2%;
+}
+
+.boutton {
+    margin: 20px;
+    position: relative;
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+.youtube {
+    background-color: #cd201f;
+    border-radius: 30px;
+    color: white;
+}
+
+.youtube:focus {
+    box-shadow: #1a243b 0 0 0 1.5px inset, #1a243b 0 2px 4px, #1a243b 0 7px 13px -3px, #1a243b 0 -3px 0 inset;
+}
+  
+.youtube:hover {
+    box-shadow: #1a243b 0 4px 8px, #1a243b 0 7px 13px -3px, #1a243b 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+  
+.youtube:active {
+    box-shadow: #1a243b 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.github {
+    background-color: #161b22;
+    border-radius: 30px;
+    color: white;
+}
+
+.github:focus {
+    box-shadow: #1a243b 0 0 0 1.5px inset, #1a243b 0 2px 4px, #1a243b 0 7px 13px -3px, #1a243b 0 -3px 0 inset;
+}
+  
+.github:hover {
+    box-shadow: #1a243b 0 4px 8px, #1a243b 0 7px 13px -3px, #1a243b 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+  
+.github:active {
+    box-shadow: #1a243b 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.discord {
+    background-color: #5865F2;
+    border-radius: 30px;
+    color: white;
+}
+
+.discord:focus {
+  box-shadow: #1a243b 0 0 0 1.5px inset, #1a243b 0 2px 4px, #1a243b 0 7px 13px -3px, #1a243b 0 -3px 0 inset;
+}
+
+.discord:hover {
+  box-shadow: #1a243b 0 4px 8px, #1a243b 0 7px 13px -3px, #1a243b 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.discord:active {
+  box-shadow: #1a243b 0 3px 7px inset;
+  transform: translateY(2px);
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="/public/menu.css" rel="stylesheet">
+  <link href="/public/new.css" rel="stylesheet">
+  <link href="/public/parms.css" rel="stylesheet">
+
+
+  <title>Arctos - Paramètres</title>
+</head>
+<body>
+    <%- include('menu') %>
+    <div class="back">
+        <div class="container">
+            <h1 class="mb-4">Paramètres</h1>
+            <form action="/parametres" method="post">
+                <select name="loadeur" id="loadeur-select">
+                    <option value="ipc" selected>Application</option>
+                    <option value="websocket">Web</option>
+                </select>
+                <select name="profiles" id="profiles-select">
+                    <% for(i in liste){ %>
+                        <option value="<%= liste[i].id %>" ><%= liste[i].nom %></option>
+                    <% } %>
+                </select>
+                <button type="submit" class="btn btn-success">Lancer</button>
+            </form>
+            <% if(erreur == true){ %>
+                <p class="erreur">Erreur : ID invalide ou le nombre de participant n'est pas un nombre ! </p>
+            
+            <% } %>
+            <% if(erreur == false){ %>
+                <p class="good"><%= load.currentname %> a bien été lancé !</p>
+        
+            <% } %>
+            <a href="/stop" class="btn btn-danger">Stopper</a>
+    
+        </div>
+    </div>
+
+</body>
+</html>

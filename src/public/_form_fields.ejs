@@ -1,0 +1,71 @@
+<div class="form-group">
+    <label for="nom">Nom</label>
+    <input required value="<%= article.nom %>" type="text" name="nom" id="nom" class="form-control">
+</div>
+<div class="form-group">
+    <label for="userid">ID</label>
+    <input required value="<%= article.userid %>" type="text" name="userid" id="userid" class="form-control">
+</div>
+<div class="form-group">
+    <label for="details">Details</label>
+    <input value="<%= article.details %>" type="text" name="details" id="details" class="form-control">
+</div>
+<div class="form-group">
+    <label for="state">Etat</label>
+    <input value="<%= article.state %>" type="text" name="state" id="state" class="form-control">
+</div>
+<div class="form-group">
+    <label for="largeimage">Clée - Grande Image</label>
+    <input value="<%= article.largeimage %>" type="text" name="largeimage" id="largeimage" class="form-control">
+</div>
+<div class="form-group">
+    <label for="largetext">Texte - Grande Image</label>
+    <input value="<%= article.largetext %>" type="text" name="largetext" id="largetext" class="form-control">
+</div>
+<div class="form-group">
+    <label for="smallimage">Clée - Petite Image</label>
+    <input value="<%= article.smallimage %>" type="text" name="smallimage" id="smallimage" class="form-control">
+</div>
+<div class="form-group">
+    <label for="smalltext">Texte - Petite Image</label>
+    <input value="<%= article.smalltext %>" type="text" name="smalltext" id="smalltext" class="form-control">
+</div>
+<div class="form-group">
+    <label for="instance">Instance</label>
+
+    <input type="checkbox" id="instance" name="instance" class="form-control" <% if(article.instance){ %> checked <% }%>>
+</div>
+<div class="form-group">
+    <label for="temps">Temps</label>
+    <input type="checkbox" id="temps" name="temps" class="form-control" <% if(article.temps){ %> checked <% }%>>
+</div>
+<div class="form-group">
+    <label for="partysize">Party - nombre de participant</label>
+    <input value="<%= article.partysize %>" type="text" name="partysize" id="partysize" class="form-control">
+</div>
+<div class="form-group">
+    <label for="partymax">Party - nombre maximum</label>
+    <input value="<%= article.partymax %>" type="text" name="partymax" id="partymax" class="form-control">
+</div>
+
+<div class="form-group">
+    <label for="btn0nom">Bouton 1 - Nom</label>
+    <input value="<%= article.bouton[0].label %>" type="text" name="btn0nom" id="btn0nom" class="form-control">
+</div>
+<div class="form-group">
+    <label for="btn0url">Bouton 1 - URL</label>
+    <input value="<%= article.bouton[0].url %>" type="text" name="btn0url" id="btn0url" class="form-control">
+</div>
+<div class="form-group">
+    <label for="btn1nom">Bouton 2 - Nom</label>
+    <input value="<%= article.bouton[1].label %>" type="text" name="btn1nom" id="btn1nom" class="form-control">
+</div>
+<div class="form-group">
+    <label for="btn1url">Bouton 1 - URL</label>
+    <input value="<%= article.bouton[1].url %>" type="text" name="btn1url" id="btn1url" class="form-control">
+</div>
+<div class="btn_form">
+    <a href="/" class="btn btn-secondary">Cancel</a>
+    <button type="submit" class="btn btn-primary">Save</button>
+</div>
+

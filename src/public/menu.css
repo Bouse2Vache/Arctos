@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1b2845;
+	background-image: linear-gradient(315deg, #1b2845 0%, hsl(214, 59%, 35%) 74%);
+    font-family: Raleway, Helvetica, sans-serif;
+    overflow: hidden;
+	align-items: center;
+	justify-content: center;
+    background-repeat: no-repeat;
+}
+
+a {
+    z-index: 1;
+}
+li {
+    color: white;
+    text-decoration: none;
+}
+.locallien  {
+    text-decoration: none;
+}
+.side-nav {
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+
+.wrapper {
+    background: #333;
+    height: 100vh;
+    width: 75px;
+}
+
+.three-dots-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+.dot {
+    margin: 10px 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.d1 {background: crimson;}
+.d2 {background: yellow;}
+.d3 {background: lightgreen;}
+
+.nav-bloc {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-bottom: 1px solid #f2f2f21e;
+}
+
+.nav-bloc:hover .sub-nav {
+    transform: translateX(75px);
+}
+
+.nav-bloc:hover {
+    background: #181818;
+}
+
+
+.nav-bloc svg {
+    fill: #f2f2f2;
+    transition: fill 0.2s ease-in-out; 
+    width: 25px;
+}
+
+
+
+.nav-bloc:hover svg {
+    fill: #50bddf;
+
+}
+
+
+.sub-nav {
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #333;
+    color: #fff;
+    transform: translateX(-100%);
+    transition: transform 0.2s ease-in-out;
+    border-right: 2px solid #000;
+    border-left: 2px solid #000;
+
+}
+
+.sub-nav h2 {
+    font-family: Open Sans, sans-serif;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+}
+
+.sub-nav ul {
+    list-style-type: none;
+}
+
+.sub-nav li {
+    padding: 15px 20px;
+}
+
+.sub-nav li:hover {
+    background: #a0a0a08e;
+}
+
+.sub-nav li a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.main-content {
+    padding-left: 75px;
+    color: #f3f3f3;
+}
+
+.main-content h1 {
+    font-family: Open Sans, sans-serif;
+    text-align: center;
+    margin: 30px 0;
+    font-size: 40px;
+}
+
+.main-content p {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 30px;
+    line-height: 1.7;
+}
