@@ -1,0 +1,48 @@
+{
+  "name": "arctos",
+  "version": "0.1.0",
+  "description": "An NodeJS application for the Discord Rich Presence",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build-installer": "electron-builder"
+  },
+  "build": {
+    "appId": "Arctos",
+    "productName": "Arctos",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "./logo.ico"
+    },
+    "nsis": {
+      "installerIcon": "./logo.ico",
+      "uninstallerIcon": "./logo.ico",
+      "uninstallDisplayName": "Arctos",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "keywords": [
+    "richpresence"
+  ],
+  "author": "Zaryus",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "discord-rpc": "^4.0.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "method-override": "^3.0.0",
+    "nodemon": "^2.0.15",
+    "opn": "^6.0.0",
+    "sqlite3": "^5.0.2",
+    "uuid": "^8.3.2"
+
+  },
+  "devDependencies": {
+    "electron": "^16.0.6",
+    "electron-builder": "^22.14.5"
+  }
+}
