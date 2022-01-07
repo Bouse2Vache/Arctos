@@ -4,8 +4,8 @@
   "description": "An NodeJS application for the Discord Rich Presence",
   "main": "index.js",
   "scripts": {
-    "test": "electron . ",
-    "start": "nodemon index.js"
+    "start": "electron . ",
+    "test": "nodemon index.js"
   },
   "keywords": [
     "richpresence"
