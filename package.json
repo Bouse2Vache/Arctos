@@ -1,0 +1,28 @@
+{
+  "name": "arctos_rp",
+  "version": "0.1.0",
+  "description": "An NodeJS application for the Discord Rich Presence",
+  "main": "index.js",
+  "scripts": {
+    "test": "electron . ",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "richpresence"
+  ],
+  "author": "ZetaDev",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "discord-rpc": "^4.0.1",
+    "ejs": "^3.1.6",
+    "electron": "^16.0.6",
+    "electron-squirrel-startup": "^1.0.0",
+    "express": "^4.17.2",
+    "method-override": "^3.0.0",
+    "nodemon": "^2.0.15",
+    "opn": "^6.0.0",
+    "sqlite3": "^5.0.2",
+    "uuid": "^8.3.2"
+  }
+}
